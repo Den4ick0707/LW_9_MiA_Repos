@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>LW_4_6_Daryev</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Enums\**" />
+		<Compile Remove="JWTManager\**" />
+		<Compile Remove="Repository\**" />
+		<Compile Remove="Validator\**" />
+		<Content Remove="Enums\**" />
+		<Content Remove="JWTManager\**" />
+		<Content Remove="Repository\**" />
+		<Content Remove="Validator\**" />
+		<EmbeddedResource Remove="Enums\**" />
+		<EmbeddedResource Remove="JWTManager\**" />
+		<EmbeddedResource Remove="Repository\**" />
+		<EmbeddedResource Remove="Validator\**" />
+		<None Remove="Enums\**" />
+		<None Remove="JWTManager\**" />
+		<None Remove="Repository\**" />
+		<None Remove="Validator\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="15.1.0" />
+		<PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.0" />
+		<PackageReference Include="MongoDB.Driver" Version="3.5.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.2" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="7.3.2" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.3.2" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.3.2" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.14.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Controllers\" />
+		<Folder Include="Models\" />
+		<Folder Include="DTOs\" />
+		<Folder Include="Mapping\" />
+		<Folder Include="UltraCoolMongoDBDatabase\" />
+		<Folder Include="Services\" />
+	</ItemGroup>
+
+</Project>
